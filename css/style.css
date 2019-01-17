@@ -236,7 +236,7 @@ figure {
   background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: 10em;
+  margin-bottom: 40px;
   clear: both; }
   #manu-hero .flexslider {
     border: none;
