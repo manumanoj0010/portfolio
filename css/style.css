@@ -5,12 +5,7 @@
   font-weight: normal;
   font-style: normal; }
 
-/* =======================================================
-*
-* 	Template Style 
-*	Edit this section
-*
-* ======================================================= */
+
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
@@ -236,7 +231,7 @@ figure {
   background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   clear: both; }
   #manu-hero .flexslider {
     border: none;
