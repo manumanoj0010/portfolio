@@ -58,24 +58,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	
-	<script src="js/modernizr-2.6.2.min.js"></script>
-<script>	
-function ValidateEmail(inputText)
-{
-var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(inputText.value.match(mailformat))
-{
-document.myform.email.focus();
-return true;
-}
-else
-{
-alert("You have entered an invalid email address!");
-document.myform.email.focus();
-return false;
-}
-}
-</script>
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132707462-1"></script>
@@ -705,6 +688,24 @@ return false;
 	</div><!-- end:container-wrap -->
 	</div><!-- end:manu-page -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="js/modernizr-2.6.2.min.js"></script>
+<script>	
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.myform.email.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.myform.email.focus();
+return false;
+}
+}
+</script>
 
 <script type="text/javascript">
 
