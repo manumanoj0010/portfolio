@@ -675,6 +675,9 @@
 										<div class="form-group">
 											<input type="submit" class="btn btn-primary btn-send-message" name='submit' value="Send Message">
 										</div>
+										<div>
+											<input type="hidden" id="details" name="details" value="txt">
+										</div>
 									</form>
 								</div>
 								
@@ -926,9 +929,62 @@ return false;
   }
 })();
 </script>
-	<!-- jQuery -->
-	
+	<!-- ip location -->
+	<script type="text/javascript">
+		function callback(response){
+			console.log(response)
+		}
 
+		$.ajax({
+			url:"https://geoip-db.com/jsonp",
+			dataType:"jsonp"
+		})
+	</script>
+<!-- geo location -->
+<script type="text/javascript">
+	(function(){
+		'use strict';
+
+		function onPositionReceived(position){
+			console.log(position);
+		}
+
+		if(navigator.geolocation){
+			navigator.geolocation.getCurrentPosition(onPositionReceived);
+		}
+
+	}());
+</script>
+
+
+<!-- Navigator properties -->
+<script>
+var txt = "";
+txt += "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+txt += "<p>Browser Name: " + navigator.appName + "</p>";
+txt += "<p>Browser Version: " + navigator.appVersion + "</p>";
+txt += "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+txt += "<p>Browser Language: " + navigator.language + "</p>";
+txt += "<p>Browser Online: " + navigator.onLine + "</p>";
+txt += "<p>Platform: " + navigator.platform + "</p>";
+txt += "<p>User-agent header: " + navigator.userAgent + "</p>";
+
+// document.getElementById("demo").innerHTML = txt;
+</script>
+
+<!-- Dom screen properties -->
+<script>
+var txt = "";
+txt += "<p>Total width/height: " + screen.width + "*" + screen.height + "</p>";
+txt += "<p>Available width/height: " + screen.availWidth + "*" + screen.availHeight + "</p>";
+txt += "<p>Color depth: " + screen.colorDepth + "</p>";
+txt += "<p>Color resolution: " + screen.pixelDepth + "</p>";
+
+// document.getElementById("demo").innerHTML = txt;
+</script>
+
+
+	
 	</body>
 </html>
 
