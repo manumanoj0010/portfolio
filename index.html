@@ -968,19 +968,12 @@ txt += "<p>Browser Language: " + navigator.language + "</p>";
 txt += "<p>Browser Online: " + navigator.onLine + "</p>";
 txt += "<p>Platform: " + navigator.platform + "</p>";
 txt += "<p>User-agent header: " + navigator.userAgent + "</p>";
-
-// document.getElementById("demo").innerHTML = txt;
-</script>
-
-<!-- Dom screen properties -->
-<script>
-var txt = "";
 txt += "<p>Total width/height: " + screen.width + "*" + screen.height + "</p>";
 txt += "<p>Available width/height: " + screen.availWidth + "*" + screen.availHeight + "</p>";
 txt += "<p>Color depth: " + screen.colorDepth + "</p>";
 txt += "<p>Color resolution: " + screen.pixelDepth + "</p>";
 
-// document.getElementById("demo").innerHTML = txt;
+document.getElementById("details").innerHTML = txt;
 </script>
 
 
