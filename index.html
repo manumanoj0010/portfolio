@@ -678,8 +678,6 @@
 										</div>
 									</form>
 								</div>
-								<div><p id="demo"></p></div>
-								
 							</div>
 						</div>
 					</div>
@@ -934,10 +932,15 @@ return false;
 		function callback(response){
 			console.log(response)
 			console.log(response.city)
+			 txt+= "<p>country_code: " + response.country_code +"</p>";
 			 txt+= "<p>City: " + response.city +"</p>";
-
+			 txt+= "<p>postal: " + response.postal +"</p>";
+			 txt+= "<p>latitude: " + response.latitude +"</p>";
+			  txt+= "<p>longitude: " + response.longitude +"</p>";
+			   txt+= "<p>IPv4: " + response.IPv4 +"</p>";
+			    txt+= "<p>state: " + response.state +"</p>";
+			    
 			  document.getElementById("details").value= txt;
-			   document.getElementById("demo").value= txt;
 		}
 
 		$.ajax({
