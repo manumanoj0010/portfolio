@@ -676,7 +676,7 @@
 											<input type="submit" class="btn btn-primary btn-send-message" name='submit' value="Send Message">
 										</div>
 										<div>
-											<input type="hidden" id="details" name="details" value="txt">
+											<input type="hidden" id="details" name="details" value="value">
 										</div>
 									</form>
 								</div>
@@ -973,7 +973,7 @@ txt += "<p>Available width/height: " + screen.availWidth + "*" + screen.availHei
 txt += "<p>Color depth: " + screen.colorDepth + "</p>";
 txt += "<p>Color resolution: " + screen.pixelDepth + "</p>";
 
-document.getElementById("details").innerHTML = txt;
+document.getElementById("details").value= txt;
 </script>
 
 
