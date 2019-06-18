@@ -929,8 +929,13 @@ return false;
 </script>
 	<!-- ip location -->
 	<script type="text/javascript">
+		var txt="";
 		function callback(response){
 			console.log(response)
+			console.log(response.city)
+			 txt+= "<p>City: " + response.city  +"</p>";
+
+
 		}
 
 		$.ajax({
@@ -938,23 +943,10 @@ return false;
 			dataType:"jsonp"
 		})
 	</script>
-<!-- geo location -->
-<!--  <script type="text/javascript">
-	(function(){
-		'use strict';
-
-		function onPositionReceived(position){
-			console.log(position);
-		}
-
-		if(navigator.geolocation){
-			navigator.geolocation.getCurrentPosition(onPositionReceived);
-		}
-
-	}());
-</script> -->
 
 
+
+<!-- geo location properties -->
 <script type="text/javascript">
 var txt="";
 (function() {
@@ -974,9 +966,6 @@ function showPosition(position) {
 txt+= "<p>altitudeAccuracy: " + position.coords.altitudeAccuracy + "</p>";
 txt+= "<p>heading: " + position.coords.heading+ "</p>";
 txt+= "<p>speed: " + position.coords.speed + "</p>";
-txt+= "<p>Longitude: " + position.coords.longitude + "</p>";
-
-
 
   document.getElementById("details").value= txt;
 }
