@@ -835,6 +835,12 @@ body.offcanvas {
       background: #f7df1e; }
     .progress-bar.color-javascript span {
       color: #f7df1e; } 
+       .progress-bar.color-django {
+    background: #092e20; }
+    .progress-bar.color-django:after {
+      background: #092e20; }
+    .progress-bar.color-django span {
+      color: #092e20; } 
 
 
 .manu-feature {
