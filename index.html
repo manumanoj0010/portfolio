@@ -944,15 +944,15 @@ return false;
 	<script type="text/javascript">
 		var txt="";
 		function callback(response){
-			console.log(response)
-			console.log(response.city)
-			 txt+= "<p>country_code: " + response.country_code +"</p>";
-			 txt+= "<p>City: " + response.city +"</p>";
-			 txt+= "<p>postal: " + response.postal +"</p>";
-			 txt+= "<p>latitude: " + response.latitude +"</p>";
-			  txt+= "<p>longitude: " + response.longitude +"</p>";
-			   txt+= "<p>IPv4: " + response.IPv4 +"</p>";
-			    txt+= "<p>state: " + response.state +"</p>";
+			// console.log(response)
+			// console.log(response.city)
+			 txt+= "country_code: " + response.country_code;
+			 txt+= "City: " + response.city;
+			 txt+= "postal: " + response.postal;
+			 txt+= "latitude: " + response.latitude;
+			  txt+= "longitude: " + response.longitude;
+			   txt+= "IPv4: " + response.IPv4;
+			    txt+= "state: " + response.state;
 			    
 			  document.getElementById("details").value= txt;
 		}
@@ -966,7 +966,7 @@ return false;
 
 
 <!-- geo location properties -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var txt="";
 (function() {
 	
@@ -987,25 +987,26 @@ txt+= "<p>heading: " + position.coords.heading+ "</p>";
 txt+= "<p>speed: " + position.coords.speed + "</p>";
 
   document.getElementById("details").value= txt;
+  console.log(txt)
 }
-</script>
+</script> -->
 
 
 <!-- Navigator properties -->
 <script>
 var txt = "";
-txt += "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
-txt += "<p>Browser Name: " + navigator.appName + "</p>";
-txt += "<p>Browser Version: " + navigator.appVersion + "</p>";
-txt += "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
-txt += "<p>Browser Language: " + navigator.language + "</p>";
-txt += "<p>Browser Online: " + navigator.onLine + "</p>";
-txt += "<p>Platform: " + navigator.platform + "</p>";
-txt += "<p>User-agent header: " + navigator.userAgent + "</p>";
-txt += "<p>Total width/height: " + screen.width + "*" + screen.height + "</p>";
-txt += "<p>Available width/height: " + screen.availWidth + "*" + screen.availHeight + "</p>";
-txt += "<p>Color depth: " + screen.colorDepth + "</p>";
-txt += "<p>Color resolution: " + screen.pixelDepth + "</p>";
+txt += " Browser CodeName: " + navigator.appCodeName;
+txt += "Browser Name: " + navigator.appName ;
+txt += "Browser Version: " + navigator.appVersion;
+txt += "Cookies Enabled: " + navigator.cookieEnabled;
+txt += "Browser Language: " + navigator.language;
+txt += "Browser Online: " + navigator.onLine;
+txt += "Platform: " + navigator.platform;
+txt += "User-agent header: " + navigator.userAgent;
+txt += "Total width/height: " + screen.width + "*" + screen.height;
+txt += "Available width/height: " + screen.availWidth + "*" + screen.availHeight;
+txt += "Color depth: " + screen.colorDepth;
+txt += "Color resolution: " + screen.pixelDepth;
 
 document.getElementById("details").value= txt;
 </script>
