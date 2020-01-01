@@ -842,6 +842,13 @@ body.offcanvas {
     .progress-bar.color-django span {
       color: #092e20; } 
 
+      .progress-bar.color-flutter {
+        background: #f7b3c2 ; }
+        .progress-bar.color-flutter:after {
+          background: #f7b3c2 ; }
+        .progress-bar.color-flutter span {
+          color: #f7b3c2 ; } 
+
 
 .manu-feature {
   text-align: left;
@@ -982,7 +989,7 @@ body.offcanvas {
     -o-transition: 0.3s;
     transition: 0.3s; }
     .project .desc .con {
-      padding: 20px;
+      /* padding: 20px; */
       display: block;
       position: relative;
       height: 300px; }
