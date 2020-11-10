@@ -790,12 +790,7 @@ body.offcanvas {
       background: #8892be; }
     .progress-bar.color-php span {
       color: #8892be; }
-  .progress-bar.color-c {
-    background: #ff0000; }
-    .progress-bar.color-c:after {
-      background: #ff0000; }
-    .progress-bar.color-c span {
-      color: #ff0000; }
+  
   .progress-bar.color-photoshop {
     background: #b4a996; }
     .progress-bar.color-photoshop:after {
@@ -846,7 +841,7 @@ body.offcanvas {
       color: #f7df1e; } 
        .progress-bar.color-django {
     background: #092e20; }
-    .progress-bar.color-django:after {
+    .progress-bar.color-django:after {   
       background: #092e20; }
     .progress-bar.color-django span {
       color: #092e20; } 
@@ -857,6 +852,20 @@ body.offcanvas {
           background: #f7b3c2 ; }
         .progress-bar.color-flutter span {
           color: #f7b3c2 ; } 
+
+          .progress-bar.color-angular {
+            background: #C5C392; }
+            .progress-bar.color-angular:after {   
+              background: #C5C392; }
+            .progress-bar.color-angular span {
+              color: #C5C392; } 
+
+              .progress-bar.color-flask {
+                background: #F48668; }
+                .progress-bar.color-flask:after {   
+                  background: #F48668; }
+                .progress-bar.color-flask span {
+                  color: #F48668; } 
 
 
 .manu-feature {
