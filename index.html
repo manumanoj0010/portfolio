@@ -31,7 +31,7 @@
 	<meta name="description" content="Manoj | Inquisitive by nature and a developer by passion. A tech enthusiast who loves to code and solve real life problems">
 	<meta name="twitter:site" content="@manumanoj0010">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -49,6 +49,7 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/extra.css">
 	<script src="js/jquery.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -60,295 +61,6 @@
 
   gtag('config', 'G-CR0TPGZ27B');
 </script>
-
-
-<style>
-	.resumeclass{
-		margin-bottom: 0em;
-	}
-
-/* The wrapper class that will contain the logo and the text */
-.logo_wrapper {
-  height: 60px;
-  overflow: hidden;
-}
-
-/* The logo will be the same height as the wrapper and transition for 300ms */
-.logo_wrapper img {
-  height: 60px;
-  width: auto;
-  transition: transform 300ms;
-}
-
-/* The text should also transition for 300ms */
-.logo_wrapper .logo_text {
-  transition: transform 300ms;
-}
-
-/* When hovering over the wrapper, the logo and text will "translate" up 40px */
-.logo_wrapper:hover img, .logo_wrapper:hover .logo_text {
-  transform: translateY(-60px);
-}
-
-
-/* button animation */
-
-@-webkit-keyframes orbit {
-  0% {
-    -webkit-transform: rotateY(90deg) rotate(0deg);
-  }
-  60% {
-    -webkit-transform: rotateY(90deg) rotate(-180deg);
-  }
-  100% {
-    -webkit-transform: rotateY(90deg) rotate(-360deg);
-  }
-}
-@-moz-keyframes orbit {
-  0% {
-    -moz-transform: rotateY(90deg) rotate(0deg);
-  }
-  60% {
-    -moz-transform: rotateY(90deg) rotate(-180deg);
-  }
-  100% {
-    -moz-transform: rotateY(90deg) rotate(-360deg);
-  }
-}
-@keyframes orbit {
-  0% {
-    -webkit-transform: rotateY(90deg) rotate(0deg);
-    -moz-transform: rotateY(90deg) rotate(0deg);
-    -ms-transform: rotateY(90deg) rotate(0deg);
-    -o-transform: rotateY(90deg) rotate(0deg);
-    transform: rotateY(90deg) rotate(0deg);
-  }
-  60% {
-    -webkit-transform: rotateY(90deg) rotate(-180deg);
-    -moz-transform: rotateY(90deg) rotate(-180deg);
-    -ms-transform: rotateY(90deg) rotate(-180deg);
-    -o-transform: rotateY(90deg) rotate(-180deg);
-    transform: rotateY(90deg) rotate(-180deg);
-  }
-  100% {
-    -webkit-transform: rotateY(90deg) rotate(-360deg);
-    -moz-transform: rotateY(90deg) rotate(-360deg);
-    -ms-transform: rotateY(90deg) rotate(-360deg);
-    -o-transform: rotateY(90deg) rotate(-360deg);
-    transform: rotateY(90deg) rotate(-360deg);
-  }
-}
-
-
-.button {
-  display: inline-block;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  align-self: center;
-  border-radius: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  /* position:absolute; */
-  padding: 10px 20px 10px 60px;
-  background: rgba(60, 162, 162, 0.6);
-  color: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-}
-.button:hover {
-  -webkit-transform: translateY(-5px);
-  -moz-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -o-transform: translateY(-5px);
-  transform: translateY(-5px);
-  color: rgba(0, 0, 0, 0.8);
-  background: rgba(60, 162, 162, 0.8);
-}
-.button:hover > span {
-  -webkit-transition: all 800ms ease-in-out;
-  -moz-transition: all 800ms ease-in-out;
-  transition: all 800ms ease-in-out;
-  -webkit-transform: rotateY(90deg) rotate(-360deg);
-  -moz-transform: rotateY(90deg) rotate(-360deg);
-  -ms-transform: rotateY(90deg) rotate(-360deg);
-  -o-transform: rotateY(90deg) rotate(-360deg);
-  transform: rotateY(90deg) rotate(-360deg);
-}
-.button > span {
-  width: 70px;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: -40px;
-  bottom: -40px;
-  border-radius: 50%;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateY(90deg) rotate(0deg);
-  -moz-transform: rotateY(90deg) rotate(0deg);
-  -ms-transform: rotateY(90deg) rotate(0deg);
-  -o-transform: rotateY(90deg) rotate(0deg);
-  transform: rotateY(90deg) rotate(0deg);
-}
-.button > span > span {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  width: 16px;
-  height: 17px;
-  left: 0;
-  top: 50px;
-  -webkit-transform: rotateY(-90deg);
-  -moz-transform: rotateY(-90deg);
-  -ms-transform: rotateY(-90deg);
-  -o-transform: rotateY(-90deg);
-  transform: rotateY(-90deg);
-}
-.button > span > span::before {
-  position: absolute;
-  content: '';
-  top: 100%;
-  left: 0;
-  margin-left: -7px;
-  border-top: 16px solid rgba(0, 0, 0, 0.6);
-  border-bottom: 0 solid transparent;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-}
-
-/* text animation */
-
-/* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
- .line-1{
-    position: relative;
-    top: 50%;  
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-} 
-
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
-
-
-/* card flipping */
-/* from: https://davidwalsh.name/css-flip  */
-section.custom {
-  /* flip the pane when hovered */
-  /* front pane, placed above back */
-  /* back, initially hidden pane */
-}
-section.custom .up {
-  color: #55DD11;
-}
-section.custom .card {
-  text-align: center;
-  color: #FFFFFF;
-  width: 100%;
-  height: 300px;
-  transition: 0.6s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  position: relative;
-  background-color:skyblue;
-}
-section.custom .flipper {
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-bottom: 10px;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-}
-section.custom .flipper.flip .card {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-section.custom .front,
-section.custom .back {
-  width: 100%;
-  padding: 5px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-section.custom .front {
-  z-index: 2;
-  /* for firefox 31 */
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  height: 100%;
-}
-section.custom .back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  height: 100%;
-}
-section.custom .goback {
-  position: absolute;
-  bottom: 0px;
-  padding-left: 20px;
-  left: 0px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* youtube */
-.video-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px; height: 0; overflow: hidden;
-}
- 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 85%;
-}
-
- .backk{
-	color: #333333;
-    padding: 5px;
-    background: rgba(255, 255, 255, 0.5);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
-} 
-
-</style>
 
 
 	</head>
@@ -400,11 +112,6 @@ height: 85%;
 				   			<div class="row">
 					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
 					   				<div class="slider-text-inner js-fullheight">
-					   					<!--<div class="desc">
-						   					<h1>Hi! <br>I'm Manoj</h1>
-						   					<h2>Student/Frontend developer/Blogger</h2>
-												<p><a href="resume.pdf"class="btn btn-primary btn-learn">Download Resume <i class="icon-download4"></i></a></p>
-											</div>-->
 					   				</div>
 					   			</div>
 					   		</div>
@@ -500,7 +207,7 @@ height: 85%;
 							<span class="manu-counter-label">Internships</span>
 						</div>
 						<div class="col-md-3 text-center animate-box">
-							<span class="manu-counter js-counter" data-from="0" data-to="4" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="manu-counter js-counter" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50"></span>
 							<span class="manu-counter-label">Projects</span>
 						</div>
 					</div>
@@ -745,7 +452,7 @@ height: 85%;
 									         <div class="panel-body">
 												 <div class="row">
 													<div class="col-md-2">
-													<img src="images/education/vit.png" alt="VIT logo" width="100px" height="100px">
+													<img src="images/education/vit.png" alt="Manu Manoj Manoj Boddu" width="100px" height="100px">
 													</div>
 													<div class="col-md-10">
 														<p> Pursuing my Bachelor of technology from a well known University <b>Vellore Institue of Technology (VIT), Vellore</b>. With a huge interest in computers, I have chosen <b>CSE(computer science and engineering)</b> as my core subject. </p>
@@ -946,28 +653,111 @@ height: 85%;
 						</div>
 					</div>
 					<div class="row">
-					<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/projects/geekhubb.jpg);">
+
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/projects/cdd.jpg);  ">
 								<div class="desc">
 									<div class="con">
 										<div class="flipper">
 											<div class="card">
-												<div class="front project" style="background-image: url(images/projects/geekhubb.jpg);">
+												<div class="front project" style="background-image: url(images/projects/cdd.jpg);">									
 												</div>
 												<div class="back">
-													<h3><a href="http://geekhubb.com" target="_blank">Geekhubb.com</a></h3>
-													<span><a href="http://geekhubb.com" target="_blank">Website</a></span>
-													<p>A tech Blog which covers various information about technology in day to day life</a></p>
-													<p style="color: gray;"> Currently Removed it</p>
+													<h3><a href="https://pypi.org/project/Countrydetails/" target="_blank">Country details</a></h3>
+													<span><a href="https://github.com/manumanoj0010/countrydetails" target="_blank">Python Package</a></span>
+													<p>Published my python package "country details" in official python package index</p>
 													<p class="icon">
-														<span><a href="http://geekhubb.com" target="_blank"><i class="icon-eye"></i>100k+</a></span>
-														<span><a href="https://geekhubb.com" target="_blank"><i class="icon-link"></i>Link </a></span>
-														<span><a href="http://geekhubb.com" target="_blank"><i class="icon-message"></i>10k+</a></span>
+														<span><a href="https://pypi.org/project/Countrydetails/" target="_blank"><i class="icon-eye"></i>PYPI</a></span>
+														<span><a href="https://github.com/manumanoj0010/countrydetails" target="_blank"><i class="icon-link"></i>Github</a></span>
+													</p>
 
+													<div class="goback">
+														<p class="backk"><i class="icon-arrow-back">back</i></p>
+												</div> 
+												 
+										</div>
+									</div>
+								</div>
+								</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/projects/covid.jpg);">
+								<div class="desc">
+									<div class="con">
+										<div class="flipper">
+											<div class="card">
+												<div class="front project" style="background-image: url(images/projects/covid.jpg);">
+												</div>
+												<div class="back">
+													<h3><a href="https://github.com/manumanoj0010/covid19website" target="_blank">CovidLab</a></h3>
+													<span><a href="https://github.com/manumanoj0010/covid19website" target="_blank">Website</a></span>
+													<p>A website which detects coronavirus. Users can upload their x-rays to get the probabilty of covid19</a></p>
+													<p class="icon">
+														<span><a href="https://github.com/manumanoj0010/covid19website" target="_blank"><i class="icon-link"></i>Link</a></span>
 													</p>
 													<div class="goback">
 														<p class="backk"><i class="icon-arrow-back">back</i></p>
 												</div> 
+										</div>
+									</div>
+								</div>
+								</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/projects/facial.PNG);">
+								<div class="desc">
+									<div class="con">
+										<div class="flipper">
+											<div class="card">
+												<div class="front project" style="background-image: url(images/projects/facial.PNG);">									
+												</div>
+												<div class="back">
+													<h3><a href="https://github.com/manumanoj0010/Attendance-Management" target="_blank">Attendance Manager</a></h3>
+													<span><a href="https://github.com/manumanoj0010/Attendance-Management" target="_blank">Facial Recognition</a></span>
+													<p>A software which uses Facial Recognition for marking of attendance</p>
+													<p class="icon">
+														<span><a href="https://github.com/manumanoj0010/Attendance-Management" target="_blank"><i class="icon-link"></i>Github</a></span>
+													</p>
+
+													<div class="goback">
+														<p class="backk"><i class="icon-arrow-back">back</i></p>
+												</div> 
+												 
+										</div>
+									</div>
+								</div>
+								</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/projects/mac.jpg);">
+								<div class="desc">
+									<div class="con">
+										<div class="flipper">
+											<div class="card">
+												<div class="front project" style="background-image: url(images/projects/mac.jpg);">													
+												</div>
+												<div class="back">
+													<div class=video-container>
+													<iframe  src="https://www.youtube.com/embed/JZHCjscw4xY"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+													</div>
+
+													<p class="icon">
+														<span><a href="http://shiftctrl.tech" target="_blank"><i class="icon-link"></i>Website Link </a></span>
+													</p>
+
+													<div class="goback">
+														<p class="backk"><i class="icon-arrow-back">back</i></p>
+												</div> 
+												 
 										</div>
 									</div>
 								</div>
@@ -1003,126 +793,7 @@ height: 85%;
 								</div>
 								</div>
 							</div>
-						</div>
-
-
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/projects/mac.jpg);">
-								<div class="desc">
-									<div class="con">
-										<div class="flipper">
-											<div class="card">
-												<div class="front project" style="background-image: url(images/projects/mac.jpg);">
-													
-													
-												</div>
-												<div class="back">
-													<div class=video-container>
-													<iframe  src="https://www.youtube.com/embed/JZHCjscw4xY"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-													</div>
-
-													<p class="icon">
-														<span><a href="http://shiftctrl.tech" target="_blank"><i class="icon-link"></i>Website Link </a></span>
-													</p>
-
-													<div class="goback">
-														<p class="backk"><i class="icon-arrow-back">back</i></p>
-												</div> 
-												 
-										</div>
-									</div>
-								</div>
-								</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/projects/cdd.jpg);  ">
-								<div class="desc">
-									<div class="con">
-										<div class="flipper">
-											<div class="card">
-												<div class="front project" style="background-image: url(images/projects/cdd.jpg);">									
-												</div>
-												<div class="back">
-													<h3><a href="https://pypi.org/project/Countrydetails/" target="_blank">Country details</a></h3>
-													<span><a href="https://github.com/manumanoj0010/countrydetails" target="_blank">Python Package</a></span>
-													<p>Published my python package "country details" in official python package index</p>
-													<p class="icon">
-														<span><a href="https://pypi.org/project/Countrydetails/" target="_blank"><i class="icon-eye"></i>PYPI</a></span>
-														<span><a href="https://github.com/manumanoj0010/countrydetails" target="_blank"><i class="icon-link"></i>Github</a></span>
-													</p>
-
-													<div class="goback">
-														<p class="backk"><i class="icon-arrow-back">back</i></p>
-												</div> 
-												 
-										</div>
-									</div>
-								</div>
-								</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/projects/sahiti.png);  ">
-								<div class="desc">
-									<div class="con">
-										<div class="flipper">
-											<div class="card">
-												<div class="front project" style="background-image: url(images/projects/sahiti.png);">									
-												</div>
-												<div class="back">
-													<h3><a href="https://pypi.org/project/Countrydetails/" target="_blank">Country details</a></h3>
-													<span><a href="https://github.com/manumanoj0010/countrydetails" target="_blank">Python Package</a></span>
-													<p>Published my python package "country details" in official python package index</p>
-													<p class="icon">
-														<span><a href="https://pypi.org/project/Countrydetails/" target="_blank"><i class="icon-eye"></i>PYPI</a></span>
-														<span><a href="https://github.com/manumanoj0010/countrydetails" target="_blank"><i class="icon-link"></i>Github</a></span>
-													</p>
-
-													<div class="goback">
-														<p class="backk"><i class="icon-arrow-back">back</i></p>
-												</div> 
-												 
-										</div>
-									</div>
-								</div>
-								</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/projects/cdd.jpg);  ">
-								<div class="desc">
-									<div class="con">
-										<div class="flipper">
-											<div class="card">
-												<div class="front project" style="background-image: url(images/projects/cdd.jpg);">									
-												</div>
-												<div class="back">
-													<h3><a href="https://pypi.org/project/Countrydetails/" target="_blank">Country details</a></h3>
-													<span><a href="https://github.com/manumanoj0010/countrydetails" target="_blank">Python Package</a></span>
-													<p>Published my python package "country details" in official python package index</p>
-													<p class="icon">
-														<span><a href="https://pypi.org/project/Countrydetails/" target="_blank"><i class="icon-eye"></i>PYPI</a></span>
-														<span><a href="https://github.com/manumanoj0010/countrydetails" target="_blank"><i class="icon-link"></i>Github</a></span>
-													</p>
-
-													<div class="goback">
-														<p class="backk"><i class="icon-arrow-back">back</i></p>
-												</div> 
-												 
-										</div>
-									</div>
-								</div>
-								</div>
-								</div>
-							</div>
-						</div>
+						</div>								
 
 					</div>
 
