@@ -1,3 +1,9 @@
+@media (max-width: 540px){
+.space-adjust{
+      margin-top: 18px;
+}
+}
+
 .resumeclass{
     margin-bottom: 0em;
 }
